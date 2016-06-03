@@ -1,0 +1,22 @@
+{
+  "name": "sea",
+  "version": "1.0.0",
+  "description": "sea",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuhuijun/seajs.git"
+  },
+  "keywords": [
+    "sea"
+  ],
+  "author": "zhuhj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhuhuijun/seajs/issues"
+  },
+  "homepage": "https://github.com/zhuhuijun/seajs#readme"
+}
