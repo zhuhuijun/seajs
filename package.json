@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/zhuhuijun/seajs/issues"
   },
-  "homepage": "https://github.com/zhuhuijun/seajs#readme"
+  "homepage": "https://github.com/zhuhuijun/seajs#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1"
+  }
 }
