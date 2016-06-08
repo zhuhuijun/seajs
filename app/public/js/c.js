@@ -15,10 +15,11 @@ define(function(require,exports,module){
             console.log("fn2...");
         }
     };
-    exports.cdialog=cdialog;
+    //exports.cdialog=cdialog;
     //导出单个
     //exports.namespace=namespace;
     //导出多个
     //module.exports=namespace;
-    return namespace;
+    //return namespace;
+    exports.namespace=namespace;
 })

@@ -21,5 +21,8 @@
   "homepage": "https://github.com/zhuhuijun/seajs#readme",
   "dependencies": {
     "body-parser": "^1.15.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1"
   }
 }

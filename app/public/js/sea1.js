@@ -8,6 +8,8 @@ define(function (require, exports, module) {
     }
 
     var b = require('./b');
+    var c=require('./c');
+    c.namespace.fn1();
     b.bdialog();
     //导出模块
     exports.dialog = dialog;
