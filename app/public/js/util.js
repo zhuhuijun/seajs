@@ -2,7 +2,7 @@
  * Created by huijun on 2016/6/3.
  */
 
-define(function(requie,exports,module){
+define(function(require,exports,module){
     var util={
         addClass:function(ele,clazzname){
             ele.classList.add(clazzname);

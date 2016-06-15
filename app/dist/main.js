@@ -1,7 +1,7 @@
 /**
  * Created by huijun on 2016/6/3.
  */
-define(function (require, exports, module) {
+define('./dist/drag', ['./util', './limit'], function (require, exports, module) {
     var util = require('./util');
     var limit = require('./limit').limit;
 
@@ -36,8 +36,8 @@ define(function (require, exports, module) {
         //move方法设置盒子的位置
         var L = ev.clientX - this.x;
         var T = ev.clientY - this.y;
-        L=limit(L,document.documentElement.clientWidth-this.ele.offsetWidth,0);
-        T=limit(T,document.documentElement.clientHeight-this.ele.offsetHeight,0);
+        L = limit(L, document.documentElement.clientWidth - this.ele.offsetWidth, 0);
+        T = limit(T, document.documentElement.clientHeight - this.ele.offsetHeight, 0);
         this.ele.style.left = L + "px";
         this.ele.style.top = T + "px";
     };
@@ -52,7 +52,7 @@ define(function (require, exports, module) {
 /**
  * Created by huijun on 2016/6/3.
  */
-define(function (require, exports, module) {
+define('./dist/limit', [], function (require, exports, module) {
     function limit(val, max, min) {
         if (val > max) {
             return max;
@@ -69,28 +69,28 @@ define(function (require, exports, module) {
  * Created by huijun on 2016/6/3.
  */
 
-define(function(requie,exports,module){
-    var util={
-        addClass:function(ele,clazzname){
+define('./dist/util', [], function (require, exports, module) {
+    var util = {
+        addClass: function (ele, clazzname) {
             ele.classList.add(clazzname);
         },
-        removeClass:function(ele,clazzname){
+        removeClass: function (ele, clazzname) {
             ele.classList.remove(clazzname);
         }
     };
-    var toggle=function(ele,clsname){
+    var toggle = function (ele, clsname) {
         ele.classList.toggle(clsname);
     }
     //module.util=util;
-    exports.toggle=toggle;
+    exports.toggle = toggle;
 });
 /**
  * Created by huijun on 2016/6/3.
  */
-define(function (require, exports, module) {
+define('./dist/main', ['./drag'], function (require, exports, module) {
     var oDiv = document.querySelector("#div1");
-    var tt=require("./drag");
-    var d=new tt.Drag(oDiv);
+    var tt = require("./drag");
+    var d = new tt.Drag(oDiv);
     //var Drag = require('./drag').Drag;
     //var d=new Drag(oDiv);
 });
